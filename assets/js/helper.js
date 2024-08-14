@@ -55,11 +55,11 @@ function embedJSONInHTML(json, year) {
     var names = json[key]["authors"];
     for (var i = 0; i < names.length; i++) {
       var name = names[i];
-      if (name === "Yuxiao Qu") {
-        html += "<b>" + name + "</b>, ";
-      } else {
-        html += name + ", ";
-      }
+      // if (name === "Yuxiao Qu") {
+      //   html += "<b>" + name + "</b>, ";
+      // } else {
+      html += name + ", ";
+      // }
     }
     html = html.slice(0, -2) + ".";
 
