@@ -55,11 +55,7 @@ function embedJSONInHTML(json, year) {
     var names = json[key]["authors"];
     for (var i = 0; i < names.length; i++) {
       var name = names[i];
-      // if (name === "Yuxiao Qu") {
-      //   html += "<b>" + name + "</b>, ";
-      // } else {
       html += name + ", ";
-      // }
     }
     html = html.slice(0, -2) + ".";
 
@@ -90,6 +86,12 @@ function embedJSONInHTML(json, year) {
     if ("video" in json[key]) {
       var video_ref = json[key]["video"];
       html += "<a href=" + video_ref + "> Video </a>";
+      html += "&nbsp;&nbsp;&nbsp;";
+    }
+
+    if ("code" in json[key]) {
+      var code_ref = json[key]["code"];
+      html += "<a href=" + code_ref + "> Code </a>";
       html += "&nbsp;&nbsp;&nbsp;";
     }
 

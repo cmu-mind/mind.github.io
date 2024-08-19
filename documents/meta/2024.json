@@ -6,25 +6,44 @@
     "date": "July 2024",
     "website": "https://cohenqu.github.io/rise.github.io/",
     "video": "https://www.youtube.com/watch?v=Qv8aTLthfhs",
-    "arxiv": "http://arxiv.org/abs/2407.18219"
+    "arxiv": "http://arxiv.org/abs/2407.18219",
+    "code": "https://github.com/cmu-mind/RISE"
   },
   "preference@icml": {
     "title": "Preference Fine-Tuning of LLMs Must Use Suboptimal, On-Policy Data",
-    "authors": ["Fahim Tajwar", "Anikait Singh", "Archit Sharma", "Rafael Rafailov", "Tengyang Xie", "Jeff Schneider", "Stefano Ermon", "Chelsea Finn", "Aviral Kumar"],
+    "authors": [
+      "Fahim Tajwar",
+      "Anikait Singh",
+      "Archit Sharma",
+      "Rafael Rafailov",
+      "Tengyang Xie",
+      "Jeff Schneider",
+      "Stefano Ermon",
+      "Chelsea Finn",
+      "Aviral Kumar"
+    ],
     "conference": "International Conference on Machine Learning (ICML), 2024",
     "date": "April 2024",
     "website": "https://understanding-rlhf.github.io/",
     "video": "https://www.youtube.com/watch?v=Qv8aTLthfhs",
-    "arxiv": "https://arxiv.org/abs/2404.14367"
+    "arxiv": "https://arxiv.org/abs/2404.14367",
+    "code": "https://github.com/Asap7772/understanding-rlhf"
   },
   "persteprl@icml": {
     "title": "RL on Incorrect Synthetic Data Enhances the Efficiency of LLM Math Reasoning by Eight-Fold",
-    "authors": ["Amrith Setlur", "Saurabh Garg", "Xinyang (Young) Geng", "Naman Garg", "Virginia Smith", "Aviral Kumar"],
+    "authors": [
+      "Amrith Setlur",
+      "Saurabh Garg",
+      "Xinyang (Young) Geng",
+      "Naman Garg",
+      "Virginia Smith",
+      "Aviral Kumar"
+    ],
     "conference": "Pre-print, 2024",
     "date": "June 2024",
     "website": "https://understanding-rlhf.github.io/",
     "video": "https://www.youtube.com/watch?v=Qv8aTLthfhs",
-    "arxiv": "https://arxiv.org/abs/2404.14367"
+    "arxiv": "https://arxiv.org/abs/2404.14367",
+    "code": "https://github.com/ars22/scaling-LLM-math-synthetic-data"
   }
 }
-

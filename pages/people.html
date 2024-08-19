@@ -13,6 +13,40 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
+    <style>
+      .people-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      .person {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      .person img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .person h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+        text-align: center;
+      }
+      .person p {
+        font-size: 0.9em;
+        margin: 5px 0;
+      }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -23,7 +57,9 @@
           <!-- Header -->
           <header id="header">
             <a href="../index.html" class="logo"
-              ><strong>CMU Machine Intelligence and Decision-Making Lab</strong></a
+              ><strong
+                >CMU Machine Intelligence and Decision-Making Lab</strong
+              ></a
             >
             <!-- <ul class="icons">
               <li>
@@ -67,10 +103,41 @@
             </ul>
             <hr class="major" />
             <h2>Ph.D. Students</h2>
+
+            <!-- <div class="people-grid">
+              <div class="person">
+                <img alt="Photo of Yuxiao Qu" src="../images/yuxiao_qu.jpeg" />
+                <h2>Yuxiao Qu</h2>
+                <p>
+                  Research Interests: Reinforcement Learning, Foundation Model
+                  Agents
+                </p>
+              </div>
+
+              <div class="person">
+                <img alt="Photo of Yuxiao Qu" src="../images/yuxiao_qu.jpeg" />
+                <h2>Yuxiao Qu</h2>
+                <p>
+                  Research Interests: Reinforcement Learning, Foundation Model
+                  Agents
+                </p>
+              </div>
+
+              <div class="person">
+                <img alt="Photo of Yuxiao Qu" src="../images/yuxiao_qu.jpeg" />
+                <h2>Yuxiao Qu</h2>
+                <p>
+                  Research Interests: Reinforcement Learning, Foundation Model
+                  Agents
+                </p>
+              </div>
+            </div> -->
             <ul>
               <li>
                 <a href="https://abitha-thankaraj.github.io/"
-                  >Abitha Thankaraj</a> (Co-advised with Prof. Yonatan Bisk, LTI)
+                  >Abitha Thankaraj</a
+                >
+                (Co-advised with Prof. Yonatan Bisk, LTI)
               </li>
               <li>
                 <a href="https://cohenqu.github.io/">Yuxiao Qu</a>
@@ -93,37 +160,61 @@
             <h2>Student Collaborators</h2>
             <ul>
               <li>
-                <a href="https://x.com/setlur_amrith?lang=en">Amrith Setlur (PhD student at CMU) </a>
+                <a href="https://x.com/setlur_amrith?lang=en"
+                  >Amrith Setlur (PhD student at CMU)
+                </a>
               </li>
               <li>
-                <a href="https://x.com/setlur_amrith?lang=en">Mitsuhiko Nakamoto (PhD student at UC Berkeley) </a>
+                <a href="https://x.com/setlur_amrith?lang=en"
+                  >Mitsuhiko Nakamoto (PhD student at UC Berkeley)
+                </a>
               </li>
               <li>
-                <a href="https://yifeizhou02.github.io/">Yifei Zhou (PhD student at UC Berkeley) </a>
+                <a href="https://yifeizhou02.github.io/"
+                  >Yifei Zhou (PhD student at UC Berkeley)
+                </a>
               </li>
               <li>
-                <a href="https://tajwarfahim.github.io/">Fahim Tajwar (PhD student at CMU) </a>
+                <a href="https://tajwarfahim.github.io/"
+                  >Fahim Tajwar (PhD student at CMU)
+                </a>
               </li>
               <li>
-                <a href="https://asap7772.github.io/">Anikait Singh (PhD student at Stanford) </a>
+                <a href="https://asap7772.github.io/"
+                  >Anikait Singh (PhD student at Stanford)
+                </a>
               </li>
               <li>
-                <a href="https://x.com/setlur_amrith?lang=en">Xinyang (Young) Geng (Senior Research Scientist at Google DeepMind) </a>
+                <a href="https://x.com/setlur_amrith?lang=en"
+                  >Xinyang (Young) Geng (Senior Research Scientist at Google
+                  DeepMind)
+                </a>
               </li>
               <li>
-                <a href="https://x.com/setlur_amrith?lang=en">Rishabh Agarwal (Senior Research Scientist at Google DeepMind) </a>
+                <a href="https://x.com/setlur_amrith?lang=en"
+                  >Rishabh Agarwal (Senior Research Scientist at Google
+                  DeepMind)
+                </a>
               </li>
               <li>
-                <a href="https://x.com/setlur_amrith?lang=en">Seohong Park (PhD student at UC Berkeley) </a>
+                <a href="https://x.com/setlur_amrith?lang=en"
+                  >Seohong Park (PhD student at UC Berkeley)
+                </a>
               </li>
               <li>
-                <a href="https://people.eecs.berkeley.edu/~oleh/">Oleh Rybkin (Post-doctoral scholar at UC Berkeley) </a>
+                <a href="https://people.eecs.berkeley.edu/~oleh/"
+                  >Oleh Rybkin (Post-doctoral scholar at UC Berkeley)
+                </a>
               </li>
               <li>
-                <a href="https://biechi.github.io/">Hao Bai (MS student at UIUC) </a>
+                <a href="https://biechi.github.io/"
+                  >Hao Bai (MS student at UIUC)
+                </a>
               </li>
               <li>
-                <a href="http://katiekang.com/">Katie Kang (PhD student at Berkeley) </a>
+                <a href="http://katiekang.com/"
+                  >Katie Kang (PhD student at Berkeley)
+                </a>
               </li>
             </ul>
           </section>
