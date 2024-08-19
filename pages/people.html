@@ -6,47 +6,96 @@
 -->
 <html>
   <head>
-    <title>CLAIR</title>
+    <title>MIND - People</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="stylesheet" href="../assets/css/main.css" />
+
     <style>
       .people-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         gap: 20px;
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
         font-family: Arial, sans-serif;
       }
+
       .person {
         border: 1px solid #ddd;
         padding: 15px;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
+        width: 350px;
+        margin: 0 auto;
+        box-sizing: border-box;
       }
-      .person img {
+
+      .person-image {
         width: 100%;
-        height: auto;
-        max-height: 200px;
-        object-fit: cover;
+        padding-top: 100%; /* Creates a 1:1 aspect ratio */
+        position: relative;
+        overflow: hidden;
         border-radius: 4px;
       }
+
+      .person-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .person-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
       .person h2 {
         font-size: 1.2em;
         margin: 10px 0;
         text-align: center;
       }
+
       .person p {
         font-size: 0.9em;
         margin: 5px 0;
       }
+
+      .person-details {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 1240px) {
+        .people-grid {
+          grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+      }
+
+      @media (max-width: 940px) {
+        .people-grid {
+          grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .people-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
+    <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -96,66 +145,144 @@
               <h1>People</h1>
             </header>
             <h2>Faculty</h2>
-            <ul>
-              <li>
-                <a href="https://aviralkumar2907.github.io/">Aviral Kumar</a>
-              </li>
-            </ul>
+            <div>
+              <div class="person">
+                <div class="person-image">
+                  <img
+                    alt="Photo of Faculty Member"
+                    src="../images/people/aviral_kumar.jpg"
+                  />
+                </div>
+                <div class="person-info">
+                  <h2>
+                    <a href="https://aviralkumar2907.github.io/"
+                      >Aviral Kumar</a
+                    >
+                  </h2>
+                  <div class="person-details">
+                    <p>Position: Assistant Professor</p>
+                    <p>Department:</p>
+                    <p>Research Interests:</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <hr class="major" />
             <h2>Ph.D. Students</h2>
 
-            <!-- <div class="people-grid">
+            <div class="people-grid">
               <div class="person">
-                <img alt="Photo of Yuxiao Qu" src="../images/yuxiao_qu.jpeg" />
-                <h2>Yuxiao Qu</h2>
-                <p>
-                  Research Interests: Reinforcement Learning, Foundation Model
-                  Agents
-                </p>
+                <div class="person-image">
+                  <img
+                    alt="Photo of Abitha Thankaraj"
+                    src="../images/people/abitha_thankaraj.jpeg"
+                  />
+                </div>
+                <div class="person-info">
+                  <h2>
+                    <a href="https://abitha-thankaraj.github.io/"
+                      >Abitha Thankaraj</a
+                    >
+                  </h2>
+                  <div class="person-details">
+                    <p>(Co-advised with Prof. Yonatan Bisk, LTI)</p>
+                    <p>Research Interests: Reinforcement Learning, Robotics</p>
+                  </div>
+                </div>
               </div>
 
               <div class="person">
-                <img alt="Photo of Yuxiao Qu" src="../images/yuxiao_qu.jpeg" />
-                <h2>Yuxiao Qu</h2>
-                <p>
-                  Research Interests: Reinforcement Learning, Foundation Model
-                  Agents
-                </p>
+                <div class="person-image">
+                  <img
+                    alt="Photo of Yuxiao Qu"
+                    src="../images/people/yuxiao_qu.jpg"
+                  />
+                </div>
+                <div class="person-info">
+                  <h2>
+                    <a href="https://cohenqu.github.io/">Yuxiao Qu</a>
+                  </h2>
+                  <div class="person-details">
+                    <p>
+                      Research Interests: Reinforcement Learning, Foundation
+                      Model Agents
+                    </p>
+                  </div>
+                </div>
               </div>
-
               <div class="person">
-                <img alt="Photo of Yuxiao Qu" src="../images/yuxiao_qu.jpeg" />
-                <h2>Yuxiao Qu</h2>
-                <p>
-                  Research Interests: Reinforcement Learning, Foundation Model
-                  Agents
-                </p>
+                <div class="person-image">
+                  <img
+                    alt="Photo of Max Sobol Mark"
+                    src="../images/people/max_sobol_mark.jpeg"
+                  />
+                </div>
+                <div class="person-info">
+                  <h2>
+                    <a href="https://maxsobolmark.com/">Max Sobol Mark</a>
+                  </h2>
+                  <div class="person-details">
+                    <p>Research Interests: Reinforcement Learning, Robotics</p>
+                  </div>
+                </div>
               </div>
-            </div> -->
-            <ul>
-              <li>
-                <a href="https://abitha-thankaraj.github.io/"
-                  >Abitha Thankaraj</a
-                >
-                (Co-advised with Prof. Yonatan Bisk, LTI)
-              </li>
-              <li>
-                <a href="https://cohenqu.github.io/">Yuxiao Qu</a>
-              </li>
-              <!-- <li>
-                <a href="https://tajwarfahim.github.io/">Fahim Tajwar</a>
-              </li> -->
-              <li>
-                <a href="https://maxsobolmark.com/">Max Sobol Mark</a>
-              </li>
-            </ul>
+              <div class="person">
+                <div class="person-image">
+                  <img
+                    alt="Photo of Bhavya Agrawalla"
+                    src="../images/people/bhavya_agrawalla.jpg"
+                  />
+                </div>
+                <div class="person-info">
+                  <h2>
+                    <a href="https://agrawallabhavya.github.io/"
+                      >Bhavya Agrawalla</a
+                    >
+                  </h2>
+                  <div class="person-details">
+                    <p>
+                      Research Interests: Machine Learning Theory, Algorithms
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="person">
+                <div class="person-image">
+                  <img
+                    alt="Photo of Zheyuan Hu"
+                    src="../images/people/zhenyuan_hu.jpg"
+                  />
+                </div>
+                <div class="person-info">
+                  <h2>
+                    <a href="https://huzheyuan.io/">Zheyuan Hu</a>
+                  </h2>
+                  <div class="person-details">
+                    <p>Research Interests: Robot Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <hr class="major" />
             <h2>Masters & Undergraduate Students</h2>
-            <ul>
-              <li>
-                <a href="https://khush3.github.io/">Khush Agrawal</a>
-              </li>
-            </ul>
+            <div class="people-grid">
+              <div class="person">
+                <div class="person-image">
+                  <img
+                    alt="Photo of Khush Agrawal"
+                    src="../images/people/khush_agrawal.jpg"
+                  />
+                </div>
+                <div class="person-info">
+                  <h2>
+                    <a href="https://khush3.github.io/">Khush Agrawal</a>
+                  </h2>
+                  <div class="person-details">
+                    <p>Research Interests: Machine Learning and robotics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <hr class="major" />
             <h2>Student Collaborators</h2>
             <ul>
